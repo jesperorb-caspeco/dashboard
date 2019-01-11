@@ -16,10 +16,13 @@
 
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: blue;
             color: white;
+            overflow: hidden;
+            font-family: 'Comic Sans MS', san-serif;
         }
 
         .title {
@@ -38,6 +41,12 @@
             position: absolute;
             bottom: 1rem;
             right: 1rem;
+        }
+
+        .web {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
         }
 
         @keyframes jelly {
@@ -87,11 +96,13 @@
 </head>
 
 <body>
+    <marquee style="color: yellow; font-size: 2em;">Caspeco</marquee>
     <div class="rotate">
         <h1 class="title">Caspeco</h1>
     </div>
 
     <img class="clippy" src="clippy.gif" alt="Clippy.">
+    <img src="web.gif" alt="Websurf" class="web">
 </body>
 
 </html>
