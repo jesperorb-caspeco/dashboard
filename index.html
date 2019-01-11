@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            color: white;
+        }
+
+        .title {
+            letter-spacing: 2rem;
+            font-size: 8em;
+            font-family: 'Comic Sans MS', san-serif;
+            animation: jelly 2s infinite;
+            text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .rotate {
+            animation: rotate 2s infinite;
+        }
+
+        .clippy {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+
+        @keyframes jelly {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+
+            75% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+
+            100% {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: scale(1) rotateZ(0);
+            }
+
+            50% {
+                transform: scale(1.5) rotateZ(180deg);
+            }
+
+            100% {
+                transform: scale(1) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate">
+        <h1 class="title">Caspeco</h1>
+    </div>
+
+    <img class="clippy" src="clippy.gif" alt="Clippy.">
+</body>
+
+</html>
