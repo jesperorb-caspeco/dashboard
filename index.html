@@ -29,12 +29,8 @@
             letter-spacing: 2rem;
             font-size: 8em;
             font-family: 'Comic Sans MS', san-serif;
-            animation: jelly 2s infinite;
+            animation: jelly 6s infinite;
             text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .rotate {
-            animation: rotate 2s infinite;
         }
 
         .clippy {
@@ -78,31 +74,13 @@
                 transform: scale3d(1, 1, 1);
             }
         }
-
-        @keyframes rotate {
-            0% {
-                transform: scale(1) rotateZ(0);
-            }
-
-            50% {
-                transform: scale(1.5) rotateZ(180deg);
-            }
-
-            100% {
-                transform: scale(1) rotateZ(360deg);
-            }
-        }
     </style>
 </head>
 
 <body>
-    <marquee style="color: yellow; font-size: 2em;">Caspeco</marquee>
-    <div class="rotate">
-        <h1 class="title">Caspeco</h1>
-    </div>
+    <marquee><h1 class="title">Caspeco</h1></marquee>
 
-    <img class="clippy" src="clippy.gif" alt="Clippy.">
-    <img src="web.gif" alt="Websurf" class="web">
+    <img class="clippy" src="clippy.gif" alt="The Microsoft Word companion Clippy.">
 </body>
 
 </html>
